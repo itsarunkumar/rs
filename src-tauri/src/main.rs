@@ -22,12 +22,7 @@ fn greet(name: &str) -> String {
 
 #[tauri::command]
 fn run_script(command: String, args: Vec<String>) -> String {
-    // let output = process::Command::new(command)
-    //     .args(args)
-    //     .output()
-    //     .expect("failed to execute process");
-
-    // return String::from_utf8_lossy(&output.stdout).to_string();
+    println!("Running script: {command} {args:?}");
     process::Command::new(command)
         .args(args)
         .spawn()
