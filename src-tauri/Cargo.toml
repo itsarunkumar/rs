@@ -1,6 +1,6 @@
 [package]
 name = "Runscript"
-version = "0.0.1"
+version = "0.0.2"
 description = "A hub for managing automation script in your system"
 authors = ["you"]
 license = ""
